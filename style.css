@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --page-top: #180c2d;
+  --page-bottom: #020710;
+  --card: #140b25;
+  --gold: #8f6813;
+  --gold-bright: #ffd447;
+  --text: #f5c52d;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 50% 25%, rgba(101, 44, 121, 0.18), transparent 34%),
+    linear-gradient(180deg, var(--page-top) 0%, #0b0820 47%, var(--page-bottom) 100%);
+  color: white;
+  font-family: "Orbitron", Arial, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 34px 20px 0;
+  overflow: hidden;
+}
+
+.card {
+  width: min(640px, 100%);
+  min-height: 930px;
+  padding: 40px 30px 35px;
+  border: 1px solid rgba(182, 133, 23, 0.72);
+  border-radius: 35px 35px 0 0;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(108, 55, 115, 0.13), transparent 36%),
+    #140b25;
+  box-shadow:
+    0 0 45px rgba(0, 0, 0, 0.28),
+    inset 0 0 70px rgba(90, 45, 100, 0.05);
+}
+
+.official-badge {
+  width: fit-content;
+  min-width: 257px;
+  height: 43px;
+  margin: 0 auto;
+  padding: 0 24px;
+  border: 1px solid rgba(190, 141, 30, 0.65);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: #f4c42e;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-shadow: 0 0 8px rgba(255, 202, 45, 0.18);
+}
+
+.official-badge span {
+  font-size: 17px;
+  line-height: 1;
+}
+
+.logo-wrap {
+  width: 100%;
+  height: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo {
+  width: 530px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transform: scale(1.02);
+  mix-blend-mode: normal;
+}
+
+.urdu-box {
+  min-height: 184px;
+  border: 1px solid rgba(164, 118, 19, 0.68);
+  border-radius: 30px;
+  padding: 30px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(18, 9, 34, 0.5);
+}
+
+.urdu-box p {
+  max-width: 500px;
+  color: #ffc928;
+  text-align: center;
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-size: 20px;
+  line-height: 2.8;
+  text-shadow: 0 0 10px rgba(255, 197, 38, 0.08);
+}
+
+.buttons {
+  margin-top: 29px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  width: 100%;
+  min-height: 75px;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  font-family: "Orbitron", Arial, sans-serif;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.download-btn {
+  color: #171326;
+  background: linear-gradient(180deg, #ffdc63 0%, #ffb900 100%);
+  box-shadow: 0 7px 18px rgba(255, 185, 0, 0.14);
+}
+
+.whatsapp-btn {
+  color: white;
+  background: linear-gradient(180deg, #06ad43 0%, #00a63e 100%);
+  box-shadow: 0 7px 18px rgba(0, 166, 62, 0.12);
+}
+
+.icon {
+  font-family: Arial, sans-serif;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1;
+  transform: translateY(-1px);
+}
+
+.whatsapp-icon {
+  width: 24px;
+  height: 24px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  position: relative;
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding: 15px 10px 0;
+  }
+
+  .card {
+    min-height: 100vh;
+    padding: 30px 18px 30px;
+    border-radius: 25px 25px 0 0;
+  }
+
+  .official-badge {
+    min-width: 225px;
+    height: 40px;
+    font-size: 12px;
+    letter-spacing: 2.2px;
+    gap: 10px;
+  }
+
+  .logo-wrap {
+    height: 280px;
+  }
+
+  .logo {
+    width: 380px;
+    max-width: 100%;
+  }
+
+  .urdu-box {
+    min-height: 175px;
+    padding: 25px 18px;
+    border-radius: 24px;
+  }
+
+  .urdu-box p {
+    font-size: 17px;
+    line-height: 2.7;
+  }
+
+  .btn {
+    min-height: 68px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo-wrap {
+    height: 220px;
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .urdu-box {
+    min-height: 155px;
+  }
+
+  .urdu-box p {
+    font-size: 15px;
+    line-height: 2.5;
+  }
+
+  .btn {
+    min-height: 64px;
+    font-size: 13px;
+    gap: 10px;
+  }
+}

@@ -1,12 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Flying Chess Hack Mod</title>
 
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -15,17 +16,29 @@
     rel="stylesheet"
   >
 
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
 
   <!-- Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  if(!f._fbq)f._fbq=n;
+
+  n.push=n;
+  n.loaded=!0;
+  n.version='2.0';
+  n.queue=[];
+
+  t=b.createElement(e);
+  t.async=!0;
+  t.src=v;
+
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)
+  }(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
 
   fbq('init', '1961419724564043');
@@ -35,7 +48,9 @@
 
 </head>
 
+
 <body>
+
 
   <!-- Meta Pixel Noscript -->
   <noscript>
@@ -48,36 +63,68 @@
     >
   </noscript>
 
+
   <main class="page">
 
     <section class="card">
 
+
       <!-- Official Badge -->
       <div class="official-badge">
+
         <span>✧</span>
+
         OFFICIAL PAGE
+
         <span>✧</span>
+
       </div>
+
 
       <!-- Main Title -->
       <div class="logo-wrap">
+
         <h1 class="hack-title">
+
           FLYING CHESS
+
           <span>HACK MOD</span>
+
         </h1>
+
       </div>
 
-      <!-- YouTube Video -->
-      <div class="video-wrap">
-        <iframe
-          src="https://www.youtube.com/embed/5TPR8na51NM?si=hjhiqDoKIAEGfmZn"
-          title="Flying Chess Hack Mod Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen>
-        </iframe>
+
+      <!-- Video -->
+      <div class="video-wrap" id="videoBox">
+
+        <!-- Custom Video Cover -->
+        <div
+          class="video-cover"
+          id="videoCover"
+        >
+
+          <img
+            src="video-cover.png"
+            alt="Flying Chess Hack Mod Video"
+          >
+
+
+          <!-- Play Button -->
+          <button
+            class="play-button"
+            type="button"
+            aria-label="Play video"
+          >
+
+            <span>▶</span>
+
+          </button>
+
+        </div>
+
       </div>
+
 
       <!-- Download Button -->
       <div class="buttons">
@@ -86,16 +133,63 @@
           class="btn download-btn"
           href="https://flyingchess.vip/?from_gameid=8162281&channelCode=100000"
         >
+
           <span class="download-icon">↓</span>
+
           DOWNLOAD HACK MOD
+
         </a>
 
       </div>
+
 
     </section>
 
   </main>
 
-</body>
-</html>
 
+
+  <!-- Video Script -->
+  <script>
+
+    const videoBox =
+      document.getElementById("videoBox");
+
+    const videoCover =
+      document.getElementById("videoCover");
+
+
+    videoCover.addEventListener("click", function () {
+
+      videoBox.innerHTML = `
+
+        <iframe
+          src="https://www.youtube.com/embed/5TPR8na51NM?autoplay=1&rel=0"
+          title="Flying Chess Hack Mod Video"
+          frameborder="0"
+
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share
+          "
+
+          referrerpolicy="strict-origin-when-cross-origin"
+
+          allowfullscreen>
+        </iframe>
+
+      `;
+
+    });
+
+  </script>
+
+
+</body>
+
+</html>
